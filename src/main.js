@@ -18,11 +18,16 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faQuoteRight } from '@fortawesome/free-solid-svg-icons'
+import { faCalendar } from '@fortawesome/free-solid-svg-icons'
+import { faLocationPin } from '@fortawesome/free-solid-svg-icons'
+import { faClock } from '@fortawesome/free-solid-svg-icons'
+import { faCopyright } from '@fortawesome/free-solid-svg-icons'
 
 
 
 /* add icons to the library */
-library.add(faFacebook, faTwitter, faSearch, faInstagram, faYoutube)
+library.add(faFacebook, faTwitter, faSearch, faInstagram, faYoutube, faQuoteRight, faCalendar, faLocationPin, faClock,faCopyright)
 
 
 

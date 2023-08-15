@@ -1,20 +1,21 @@
 <script>
+
 export default {
     
 }
 </script>
 <template>
     <nav>
-      <div class="bg-green-700 px-2 py-4 text-white text-sm flex items-center justify-around cursor-pointer sm:text-sm">
-            <section class="flex items-center ">
-                <p class="px-3">TETFund Intervention </p>|
-                <p class="px-3">Give/Donations </p>|
-                <p class="px-3">Enterprise </p>|
-                <p class="px-3">FAQs </p>|
-                <p class="px-3">UNN Mail </p>|
-                <p class="px-3">Research Gate </p>| 
-                <p class="px-3">UNN Mart </p>|
-                <p class="px-3">Contact </p>
+      <div class="bg-green-700 px-1 py-4 text-white text-sm flex items-center justify-around cursor-pointer sm:text-sm">
+            <section class="flex items-center justify-around ">
+                <p class="px-2">TETFund Intervention |</p>
+                <p class="px-2 hidden sm:inline">Give/Donations |</p>
+                <p class="px-2">Enterprise |</p>
+                <p class="px-2">FAQs |</p>
+                <p class="px-2">UNN Mail |</p>
+                <p class="px-2 hidden sm:inline">Research Gate |</p>
+                <p class="px-2 hidden sm:inline">UNN Mart |</p>
+                <p class="px-2 hidden sm:inline">Contact |</p>
             </section>
             
             <section class="sm:flex  items-center hidden justify-between px-12">
@@ -22,7 +23,7 @@ export default {
                     <input type="search" placeholder="Search" class="outline-none text-black" >
                     <font-awesome-icon icon="fa-solid fa-search" class="text-2xl text-gray-300  hover:text-green-400 px-2" />
                 </div>
-                <div class="">
+                <div class=" mx-5">
                     
                     <font-awesome-icon icon="fa-brands fa-youtube" class="text-2xl text-white hover:text-green-400 px-2" />
                     <font-awesome-icon icon="fa-brands fa-twitter" class="text-2xl text-white hover:text-green-400 px-2" />
@@ -45,13 +46,14 @@ export default {
         <section class="hidden sm:inline text-xl cursor-pointer">
           <router-link to="/" class="inline p-5 hover:font-semibold " >Home</router-link>
           <router-link to="/about" class="inline p-2 hover:font-semibold" >Academics</router-link>
-          <router-link to="/student" class="inline p-2 hover:font-semibold" >Admission</router-link>
-          <router-link to="/news" class="inline p-2 hover:font-semibold" >Libraries</router-link>
-          <router-link to="/news" class="inline p-2 hover:font-semibold" >Campuses</router-link>
+          <router-link to="/" class="inline p-2 hover:font-semibold" >Admission</router-link>
+           
+          <router-link to="/" class="inline p-2 hover:font-semibold" >Libraries</router-link>
+          <!-- <router-link to="/news" class="inline p-2 hover:font-semibold" >Campuses</router-link> -->
           <router-link to="/news" class="inline p-2 hover:font-semibold" >Registry</router-link>
-          <router-link to="/news" class="inline p-2 hover:font-semibold" >Alumni</router-link>
+          <!-- <router-link to="/news" class="inline p-2 hover:font-semibold" >Alumni</router-link> -->
           <router-link to="/news" class="inline p-2 hover:font-semibold" >News</router-link>
-          <router-link to="/" class="inline px-8 py-3 hover:border-gray-500 hover:text-white hover:bg-green-500 mx-12 border-2 border-green-700 text-green-700 rounded-2xl " >Portal</router-link>
+          <router-link to="/studentportal" class="inline px-8 py-3 hover:bg-white hover:text-green-600 bg-green-700 mx-12 border-2 hover:border-green-700 text-white rounded-2xl " >Portal</router-link>
          
         </section>
         <button id="hamburger-button" class="text-3xl md:hidden w-1/6 mb-20 cursor-pointer">
@@ -62,5 +64,19 @@ export default {
      
      
     </nav>
+    <section class="absolute top-0 bg-green-400 w-full text-5xl flex flex-col justify-center">
+      <button class="text-8xl self-end px-6">
+        &times;
+      </button>
+      <section class="flex flex-col min-h-screen items-center py-8">
+        <router-link to="/" class="w-full text-center py-6 hover:opacity-90">Home</router-link>
+        <router-link to="/" class="w-full text-center py-6 hover:opacity-90">Academics</router-link>
+        <router-link to="/" class="w-full text-center py-6 hover:opacity-90">Admission</router-link>
+        <router-link to="/" class="w-full text-center py-6 hover:opacity-90">Libraries</router-link>
+        <router-link to="/" class="w-full text-center py-6 hover:opacity-90">Registry</router-link>
+        <router-link to="/" class="w-full text-center py-6 hover:opacity-90">News</router-link>
+        <router-link to="/" class="w-full text-center py-6 hover:opacity-90">Portal</router-link>
+      </section>
+    </section>
     
   </template>
