@@ -79,7 +79,7 @@
 
         <div class="text-center py-20">
             <p >
-                Copyright <font-awesome-icon icon="fa-solid fa-copy-right" class="text-2xl text-gray-300 px-2" /> 2023 University of Nigeria 
+                Copyright &copy; 2023 University of Nigeria 
                </p>
                <p >
                 Redesigned by <span class="font-bold text-2xl">Zoba</span>

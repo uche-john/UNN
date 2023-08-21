@@ -1,4 +1,6 @@
 <script>
+import Footer from '../components/Footer.vue'
+import {mapState} from "vuex"
 
 export default {
   //  data(){
@@ -24,7 +26,9 @@ export default {
         "https://www.unn.edu.ng/wp-content/uploads/2023/08/Closure-of-PG-2023-1360x510_c.png",
         "https://www.unn.edu.ng/wp-content/uploads/2023/08/New-Academic-Session-2022-1360x510_c.png",
       ],
-      currentIndex: 0
+      currentIndex: 0,
+      
+      // show:false
     };
   },
   computed: {
@@ -33,8 +37,15 @@ export default {
     },
     currentImageAlt() {
       return `Image ${this.currentIndex + 1}`;
-    }
+    },
+    
+      ...mapState(["show"])
+   
+    
   },
+
+  
+
   methods: {
     nextSlide() {
       this.currentIndex = (this.currentIndex + 1) % this.images.length;
@@ -45,18 +56,22 @@ export default {
   },
   mounted() {
     setInterval(this.nextSlide, 5000); // Change slide every 5 seconds
+  },
+  components:{
+   Footer,
+   // Nav
   }
 }
 </script>
 <template>
-  <div>
+  <div v-show="!show">
       
-    
+    <!-- <Nav/> -->
     
       <div class="slideshow-container">
         <div class="slide">
          <!-- "../assets/unnimg7.png" -->
-          <img :src="images" :alt="currentImageAlt" class="w-full">
+          <img :src="images[0]" :alt="currentImageAlt" class="w-full">
         </div>
         <button class="prev-button" @click="prevSlide">&#10094;</button>
         <button class="next-button" @click="nextSlide">&#10095;</button>
@@ -268,6 +283,7 @@ export default {
       </div>
 
      </section>
+     <Footer/>
 
    </div>
 
@@ -276,7 +292,7 @@ export default {
 
     
       
-    
+ 
     
    
     

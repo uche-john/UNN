@@ -22,12 +22,19 @@ import { faQuoteRight } from '@fortawesome/free-solid-svg-icons'
 import { faCalendar } from '@fortawesome/free-solid-svg-icons'
 import { faLocationPin } from '@fortawesome/free-solid-svg-icons'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
-import { faCopyright } from '@fortawesome/free-solid-svg-icons'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
+import { faAddressBook } from '@fortawesome/free-solid-svg-icons'
+import { faBuilding } from '@fortawesome/free-solid-svg-icons'
+import { faCashRegister } from '@fortawesome/free-solid-svg-icons'
+import { faNewspaper } from '@fortawesome/free-solid-svg-icons'
+import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
+import { faPerson } from '@fortawesome/free-solid-svg-icons'
 
 
 
 /* add icons to the library */
-library.add(faFacebook, faTwitter, faSearch, faInstagram, faYoutube, faQuoteRight, faCalendar, faLocationPin, faClock,faCopyright)
+library.add(faFacebook, faTwitter, faSearch, faInstagram, faYoutube, faQuoteRight, faCalendar, faLocationPin, faClock,faHome, faAddressBook, faBuilding,
+    faCashRegister, faNewspaper, faGraduationCap, faPerson)
 
 
 
