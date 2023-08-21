@@ -3,9 +3,8 @@ import {RouterView} from "vue-router"
 
 
 import Nav from './components/Nav.vue'
-import HomeView from "./views/HomeView.vue"
-import Footer from './components/Footer.vue'
-// import StudentPortal from './views/StudentPortal.vue'
+
+
 export default {
    data(){
       return{
@@ -14,16 +13,9 @@ export default {
       }
    },
    components: {
-      Nav,
-      // HomeView,
-      // Footer,
-      // StudentPortal
+      Nav
    },
-   // methods:{
-   //    toggle(){
-   //       show= !show
-   //    }
-   // }
+  
    
 }
 </script>

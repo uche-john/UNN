@@ -3,16 +3,7 @@ import Footer from '../components/Footer.vue'
 import {mapState} from "vuex"
 
 export default {
-  //  data(){
-  //     return{
-  //        image:"https://www.unn.edu.ng/wp-content/uploads/2023/08/Hostel-application-1360x510_c.png"
-
-  //     }
-  //  },
-
-  //  components:{
-      
-  //  }
+ 
 
    data() {
     return {
@@ -55,7 +46,7 @@ export default {
     }
   },
   mounted() {
-    setInterval(this.nextSlide, 5000); // Change slide every 5 seconds
+    setInterval(this.nextSlide, 2000); // Change slide every 2 seconds
   },
   components:{
    Footer,
@@ -285,20 +276,6 @@ export default {
      </section>
      <Footer/>
 
-   </div>
-
-
-
-
-    
-      
- 
-    
-   
-    
-   
-    
-    
- 
+  </div>
 </template>
 

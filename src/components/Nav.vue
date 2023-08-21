@@ -1,19 +1,24 @@
 <script>
-  import {mapState} from "vuex"
+  import {mapState,mapMutations} from "vuex"
 
 
 export default {
   data(){
     return{
-      // show:false
-      ...mapState(["show"])
+      
+      
       
     }
   },
-  // computed:{
-  //   ...mapState(["show"])
 
-  // }
+  computed:{
+    ...mapState(["show","HomeVisibility"])
+  },
+
+  methods:{
+    ...mapMutations(["toggleShow"])
+
+  }
 
     
 }
@@ -74,7 +79,7 @@ export default {
            <router-link to="/studentportal" class="inline px-8 py-3 hover:bg-white hover:text-green-600 bg-green-700 mx-12 border-2 hover:border-green-700 text-white rounded-2xl " >Portal</router-link>
           
          </section>
-         <button id="hamburger-button" class="text-3xl md:hidden w-1/6 mb-20 cursor-pointer" @click="show=!show">
+         <button id="hamburger-button" class="text-3xl md:hidden w-1/6 mb-20 cursor-pointer" @click="toggleShow">
            &#9776;
          </button>
        </div>
@@ -82,18 +87,19 @@ export default {
       
     </nav>
  
-     <section class="absolute top-0 bg-green-700 w-full text-5xl flex flex-col justify-center" v-show="!show">
-       <button class="text-8xl text-white self-end px-6" @click="show=!show">
+     <section class="absolute top-0 bg-green-700 w-full text-5xl flex flex-col justify-center" v-show="show">
+       <button class="text-8xl text-white self-end px-6" @click="toggleShow">
          &times;
        </button>
        <section class="flex flex-col min-h-screen items-left text-white text-left py-8">
-         <router-link to="/" class="w-full text-center border-b border-white py-6 hover:opacity-20" @click="show=!show"><font-awesome-icon icon="fa-solid fa-home" class="text-2xl text-white hover:text-green-400 px-2" />Home</router-link>
-         <router-link to="/" class="w-full text-center border-b border-white py-6 hover:opacity-20" @click="show=!show"> <font-awesome-icon icon="fa-solid fa-address-book" class="text-2xl text-white hover:text-green-400 px-2" />Academics</router-link>
-         <router-link to="/" class="w-full text-center border-b border-white py-6 hover:opacity-20" @click="show=!show"><font-awesome-icon icon="fa-solid fa-graduation-cap" class="text-2xl text-white hover:text-green-400 px-2" /> Admission</router-link>
-         <router-link to="/" class="w-full text-center border-b border-white py-6 hover:opacity-20" @click="show=!show"><font-awesome-icon icon="fa-solid fa-building" class="text-2xl text-white hover:text-green-400 px-2" /> Libraries</router-link>
-         <router-link to="/" class="w-full text-center border-b border-white py-6 hover:opacity-20" @click="show=!show"><font-awesome-icon icon="fa-solid fa-cash-register" class="text-2xl text-white hover:text-green-400 px-2" /> Registry</router-link>
-         <router-link to="/" class="w-full text-center border-b border-white py-6 hover:opacity-20" @click="show=!show"><font-awesome-icon icon="fa-solid fa-newspaper" class="text-2xl text-white hover:text-green-400 px-2" />News</router-link>
-         <router-link to="/studentportal" class="w-full text-center border-b border-white py-6 hover:opacity-20 " @click="show=!show"> <font-awesome-icon icon="fa-solid fa-person" class="text-2xl text-white hover:text-green-400 px-2" />Portal</router-link>
+         <router-link to="/" class="w-full text-center border-b border-white py-6 hover:opacity-20" @click="toggleShow"><font-awesome-icon icon="fa-solid fa-home" class="text-2xl text-white hover:text-green-400 px-2" />Home</router-link>
+         <router-link to="/" class="w-full text-center border-b border-white py-6 hover:opacity-20" @click="toggleShow"> <font-awesome-icon icon="fa-solid fa-address-book" class="text-2xl text-white hover:text-green-400 px-2" />Academics</router-link>
+         <router-link to="/" class="w-full text-center border-b border-white py-6 hover:opacity-20" @click="toggleShow"><font-awesome-icon icon="fa-solid fa-graduation-cap" class="text-2xl text-white hover:text-green-400 px-2" /> Admission</router-link>
+         <router-link to="/" class="w-full text-center border-b border-white py-6 hover:opacity-20" @click="toggleShow"><font-awesome-icon icon="fa-solid fa-building" class="text-2xl text-white hover:text-green-400 px-2" /> Libraries</router-link>
+         <router-link to="/" class="w-full text-center border-b border-white py-6 hover:opacity-20" @click="toggleShow"><font-awesome-icon icon="fa-solid fa-cash-register" class="text-2xl text-white hover:text-green-400 px-2" /> Registry</router-link>
+         <router-link to="/" class="w-full text-center border-b border-white py-6 hover:opacity-20" @click="toggleShow"><font-awesome-icon icon="fa-solid fa-newspaper" class="text-2xl text-white hover:text-green-400 px-2" />News</router-link>
+         <router-link to="/studentportal" class="w-full text-center border-b border-white py-6 hover:opacity-20 " @click="toggleShow"> <font-awesome-icon icon="fa-solid fa-person" class="text-2xl text-white hover:text-green-400 px-2" />Portal</router-link>
+         
        </section>
        
      </section>

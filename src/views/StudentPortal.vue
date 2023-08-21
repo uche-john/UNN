@@ -1,6 +1,6 @@
 <template>
     <!-- <Nav/> -->
-    <form class="m-auto w-4/5 mb-10 text-center shadow-lg border rounded-md sm:w-3/5">
+    <form class="m-auto w-3/5 mb-10 text-center shadow-lg border rounded-md sm:w-2/5">
         <div class="m-auto">
             <img src="../assets/unnLogo.png" alt="" class="w-1/5 m-auto my-10">
             <p class="text-xl font-bold">Sign Into Your Account</p>
