@@ -30,14 +30,14 @@ export default {
     <nav>
        <div class="bg-green-700 px-1 py-4 text-white text-sm flex items-center justify-around cursor-pointer sm:text-sm">
              <section class="flex items-center justify-around ">
-                 <p class="px-2">TETFund Intervention |</p>
+                 <p class="px-2 hidden sm:inline">TETFund Intervention |</p>
                  <p class="px-2 hidden sm:inline">Give/Donations |</p>
                  <p class="px-2">Enterprise |</p>
                  <p class="px-2">FAQs |</p>
-                 <p class="px-2">UNN Mail |</p>
+                 <p class="px-2 hidden sm:inline">UNN Mail |</p>
                  <p class="px-2 hidden sm:inline">Research Gate |</p>
-                 <p class="px-2 hidden sm:inline">UNN Mart |</p>
-                 <p class="px-2 hidden sm:inline">Contact |</p>
+                 <p class="px-2 ">UNN Mart |</p>
+                 <p class="px-2 ">Contact |</p>
              </section>
              
              <section class="sm:flex  items-center hidden justify-between px-12">
@@ -58,10 +58,10 @@ export default {
        
        <div class="text-green-700 bg-white flex items-center   justify-between sm:py-10  ">
          <section class=" text-right pl-5 flex items-center  justify-between">
-           <img src="../assets/unnLogo.png" alt="UNN logo" class="w-20">
+           <img src="../assets/unnLogo.png" alt="UNN logo" class=" w-10 mb-10 sm:w-20">
            <div class="mb-12 pl-5">
-             <p class="text-3xl sm:text-2xl font-bold " >University of Nigeria</p>
-             <p class="text-sm pt-2  font-mono">Restoring The Dignity of Man</p>
+             <p class="text-xl sm:text-2xl font-bold " >University of Nigeria</p>
+             <p class="text-sm pt-2   font-mono">Restoring The Dignity of Man</p>
            </div>
          </section>
         

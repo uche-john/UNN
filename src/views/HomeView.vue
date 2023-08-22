@@ -48,7 +48,7 @@ computed:{
 <template>
   <div v-show="!show">
       
-    <!-- <Nav/> -->
+    
     
     <div class="slideshow">
       <img :src="images[currentIndex]" alt="Slideshow Image" class="max-w-full h-auto">
@@ -58,10 +58,10 @@ computed:{
         <div class=" flex-col flex justify-around items-center mt-10 p-5 sm:flex-row">
           <div>
             <div class="relative">
-              <img src="../assets/vc.jpeg" alt="VC" class=" w-4/6 m-auto rounded-2xl  sm:w-5/6 sm:ml-10">
-              <div class="text-md text-white absolute w-4/6 ml-24 p-10 rounded-b-2xl  bg-black bottom-1 text-left opacity-60 sm:w-5/6 sm:ml-10">
+              <img src="../assets/vc.jpeg" alt="VC" class=" w-5/6 m-auto rounded-2xl  sm:w-5/6 sm:ml-10">
+              <div class="text-md text-white absolute w-4/5  ml-10 p-4 sm:p-10 rounded-b-2xl  bg-black bottom-1 text-left opacity-60 sm:w-5/6 sm:ml-10">
                 <p>The Vice-Chancellor</p>
-                <p class="font-bold text-xl">Professor Charles Arinzechukwu Igwe</p>
+                <p class="font-bold text-sm sm:text-xl">Professor Charles Arinzechukwu Igwe</p>
               </div>
             </div>
           </div>
@@ -89,9 +89,9 @@ computed:{
         </div>
     
     <section class="flex items-center text-xl justify-between p-10">
-       <p class="text-2xl">Latest News</p>
+       <p class=" text-sm sm:text-2xl">Latest News</p>
     
-       <p class="text-blue-400 text-2xl">See more news</p>
+       <p class="text-blue-400 text-sm sm:text-2xl">See more news</p>
     </section>
     
      <section class="flex flex-col items-center justify-evenly sm:flex-row">
@@ -124,35 +124,35 @@ computed:{
      </section>
      
      <section class="flex items-center text-xl justify-between p-10">
-       <p class="text-2xl">Latest Events</p>
+       <p class="text-sm sm:text-2xl">Latest Events</p>
     
-       <p class="text-blue-400 text-2xl">See more events</p>
+       <p class="text-blue-400 text-sm sm:text-2xl">See more events</p>
     </section>
     
     <section class="flex flex-col items-center py-10 justify-around sm:flex-row">
        <div class="w-4/5 rounded-xl shadow-xl text-center mb-20 sm:w-2/5">
           <p class="bg-green-700 p-5 text-center  rounded-t-xl w-full text-white"><font-awesome-icon icon="fa-solid fa-calendar" class="text-2xl text-gray-300 px-2" />  Thursday 8th June, 2023</p>
         
-          <p class="text-center text-2xl font-bold p-5">
+          <p class="text-center text-md sm:text-2xl font-bold p-5">
              181st INAUGURAL LECTURE
           </p>
     
           <p class="text-gray-400 text-center py-5"> <font-awesome-icon icon="fa-solid fa-location-pin" class="text-2xl text-gray-300 px-2" /> Moot Court, University of Nigeria, Enugu</p>
           <p class="text-gray-400 text-center py-5"> <font-awesome-icon icon="fa-solid fa-clock" class="text-2xl text-gray-300 px-2" /> 1:00 PM</p>
-          <button class="border p-3 my-10 border-green-700 rounded-xl text-green-700 text-center">View Details</button>
+          <button class="border p-3 my-5 sm:my-10 border-green-700 rounded-xl text-green-700 text-center hover:border hover:bg-green-700 hover:text-white">View Details</button>
     
        </div>
     
          <div class="w-4/5 rounded-xl shadow-xl text-center mb-20 sm:w-2/5">
          <p class="bg-green-700 p-5 text-center  rounded-t-xl w-full text-white"> <font-awesome-icon icon="fa-solid fa-calendar" class="text-2xl text-gray-300 px-2" /> June 4th - 8th, 2023</p>
     
-          <p class="text-center text-2xl font-bold p-5">
+          <p class="text-center text-md sm:text-2xl font-bold p-5">
              2nd Annual International Conference on Water in Africa
           </p>
     
           <p class="text-gray-400 text-center py-5"> <font-awesome-icon icon="fa-solid fa-location-pin" class="text-2xl text-gray-300 px-2" /> Princess Alexandra Auditorium (PAA)</p>
           <p class="text-gray-400 text-center py-5"> <font-awesome-icon icon="fa-solid fa-clock" class="text-2xl text-gray-300 px-2" /> 12:00 Noon</p>
-          <button class="border p-3 my-5 border-green-700 rounded-xl text-green-700 text-center">View Details</button>
+          <button class="border p-3 my-5 border-green-700 rounded-xl text-green-700 text-center hover:border hover:bg-green-700 hover:text-white">View Details</button>
     
        </div>
     
@@ -168,20 +168,20 @@ computed:{
     
          
          
-          <button class="border p-3 my-16 border-green-700 rounded-xl text-green-700  text-center">View Details</button>
+          <button class="border p-3 my-4 sm:my-16 border-green-700 rounded-xl text-green-700  text-center hover:border hover:bg-green-700 hover:text-white">View Details</button>
     
        </div>
     
          <div class="w-4/5 rounded-xl shadow-xl text-center mb-20 sm:w-2/5">
          <p class="bg-green-700 p-5 text-center  rounded-t-xl w-full text-white"> <font-awesome-icon icon="fa-solid fa-calendar" class="text-2xl text-gray-300 px-2" />June 27th -28th, 2023</p>
     
-          <p class="text-center text-2xl font-bold p-5">
+          <p class="text-center text-md sm:text-2xl font-bold p-5">
             Youth Friendly Resource Center Hybrid National Symosium/Conference
           </p>
     
           <p class="text-gray-400 text-center py-5"> <font-awesome-icon icon="fa-solid fa-location-pin" class="text-2xl text-gray-300 px-2" /> Princess Alexandra Auditorium (PAA)</p>
           <p class="text-gray-400 text-center py-5"> <font-awesome-icon icon="fa-solid fa-clock" class="text-2xl text-gray-300 px-2" /> 10:00 AM</p>
-          <button class="border p-3 my-5 border-green-700 rounded-xl text-green-700 text-center">View Details</button>
+          <button class="border p-3 my-5 border-green-700 rounded-xl text-green-700 text-center hover:border hover:bg-green-700 hover:text-white">View Details</button>
     
        </div>
     
@@ -219,7 +219,7 @@ computed:{
           <img src="../assets/img9.jpeg" alt="VC" class="w-full  ">
     
           <p class="text-left text-2xl font-bold p-2">About UNN</p>
-          <p class="text-left text-md pb-16 p-2">
+          <p class="text-left text-md pb-4 sm:pb-16 p-2">
              To place the University of Nigeria, Nsukka in the forefront of research and the development, innovation, knowledge transfer and human resources
              development in global academics terrain, while promotting the core values...
           </p>

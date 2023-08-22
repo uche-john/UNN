@@ -2,13 +2,13 @@
     <div id="footer" class="text-white text-center bg-green-700 sm:text-left">
 
         <div class="flex flex-col items-center justify-between bg-green-600 p-10 sm:flex-row ">
-            <section class=" text-right pl-5 flex items-center justify-between">
-                <img src="../assets/unnLogo.png" alt="UNN logo" class="w-20">
+            <section class=" text-right pl-5 flex items-center  justify-between">
+                <img src="../assets/unnLogo.png" alt="UNN logo" class=" w-10 mb-10 sm:w-20">
                 <div class="mb-12 pl-5">
-                  <p class="text-3xl sm:text-4xl " >University of Nigeria</p>
-                  <p class="text-sm pt-2  font-mono">Restoring The Dignity of Man</p>
+                  <p class="text-xl sm:text-2xl font-bold " >University of Nigeria</p>
+                  <p class="text-sm pt-2   font-mono">Restoring The Dignity of Man</p>
                 </div>
-            </section>
+              </section>
             <section>
                 <p class="text-2xl mt-16 font-bold">Connect With Us</p>
                 <div class=" mx-5">
