@@ -1,6 +1,6 @@
 <template>
     <!-- <Nav/> -->
-    <form class="m-auto w-3/5 mb-10 text-center shadow-lg border rounded-md sm:w-2/5">
+    <form class="m-auto w-4/5 mb-10 text-center shadow-lg border rounded-md sm:w-2/5">
         <div class="m-auto">
             <img src="../assets/unnLogo.png" alt="" class="w-1/5 m-auto my-10">
             <p class="text-xl font-bold">Sign Into Your Account</p>
@@ -10,10 +10,13 @@
             <input type="Password" class="w-3/5 outline-none  border-b mb-10" placeholder="Password">
             <div class="flex items-center w-3/5 m-auto text-sm justify-between sm:text=xl">
                  <div><input type="radio" class="mx-2 pt-2"><span>Remember me</span> </div>
-                <p><a href="#" class="text-purple-800">Forgot Password?</a></p>
+                <p><a href="#" class="text-blue-300">Forgot Password?</a></p>
             </div>
             <br>
-            <button class="w-1/5  bg-blue-400 rounded-md p-4 mb-20 text-sm text-white sm:text-xl">Sign In</button>
+            <button class="w-1/5  bg-blue-400 rounded-md p-4 mb-10 text-sm text-white sm:text-xl">Sign In</button>
+            <p >Click <a href="#"><span class="text-blue-300">here</span> </a>to get Hostel</p>
+            
+        <p class="my-5">Any issues? <a href="#"><span class="text-blue-300">Send us an email</span> </a> or call our support on 09055397623</p>
         </section>
 
     </form>

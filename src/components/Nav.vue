@@ -67,13 +67,13 @@ export default {
         
          <section class="hidden sm:inline text-xl cursor-pointer">
            <router-link to="/" class="inline p-5 hover:font-semibold " >Home</router-link>
-           <router-link to="/about" class="inline p-2 hover:font-semibold" >Academics</router-link>
+           <router-link to="/" class="inline p-2 hover:font-semibold" >Academics</router-link>
            <!-- <router-link to="/" class="inline p-2 hover:font-semibold" >Admission</router-link> -->
 
  
            <router-link to="/" class="inline p-2 hover:font-semibold" >Libraries</router-link>
            <!-- <router-link to="/news" class="inline p-2 hover:font-semibold" >Campuses</router-link> -->
-           <router-link to="/about" class="inline p-2 hover:font-semibold" >Registry</router-link>
+           <router-link to="/" class="inline p-2 hover:font-semibold" >Registry</router-link>
            <!-- <router-link to="/news" class="inline p-2 hover:font-semibold" >Alumni</router-link> -->
            <router-link to="/" class="inline p-2 hover:font-semibold" >News</router-link>
            <router-link to="/studentportal" class="inline px-8 py-3 hover:bg-white hover:text-green-600 bg-green-700 mx-12 border-2 hover:border-green-700 text-white rounded-2xl " >Portal</router-link>

@@ -27,13 +27,13 @@
 
         <div class="flex-col items-center justify-between sm:flex sm:flex-row bg-green-700 p-10">
             <section class="cursor-pointer">
-                <p class="text-3xl py-5 text-center">CONNECT WITH US</p>
-                <P class="py-2 hover:underline text-center">UNN, Nsukka, Enugu State, Nigeria</P>
-                <p class="py-2 hover:underline text-center">+234 904 342 0028 </p>
-                <p class="py-2 text-center">or</p>
-                <p class="py-2 hover:underline text-center"> +234 904 342 0028</p>
-                <p class="py-2 text-center">or</p>
-                <p class="py-2 hover:underline text-center">unnedu@gmail.com</p>
+                <p class="text-3xl py-5 ">General Information</p>
+                <P class="py-2 hover:underline ">Emarketing[UNN Mart]</P>
+                <p class="py-2 hover:underline ">About Us</p>
+                <p class="py-2 ">International Collaboration</p>
+                <p class="py-2 hover:underline "> Jobe/Schorlarships</p>
+                <p class="py-2 ">Contact</p>
+                <p class="py-2 hover:underline ">Maps</p>
 
             </section>
     
@@ -82,7 +82,7 @@
                 Copyright &copy; 2023 University of Nigeria 
                </p>
                <p >
-                Redesigned by <span class="font-bold text-2xl">Zoba</span>
+                Redesigned by <span class="font-bold text-xl">Zoba</span>
                </p>
           </div>
       

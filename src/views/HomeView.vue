@@ -3,51 +3,42 @@ import Footer from '../components/Footer.vue'
 import {mapState} from "vuex"
 
 export default {
- 
-
    data() {
     return {
       images: [
-        "https://www.unn.edu.ng/wp-content/uploads/2023/07/Diploma-2023-1360x510_c.png",
-        "https://www.unn.edu.ng/wp-content/uploads/2023/08/PGC-2023-1360x510_c.png",
-        "https://www.unn.edu.ng/wp-content/uploads/2023/08/PG-Orientation-2023-1360x510_c.png",
-        "https://www.unn.edu.ng/wp-content/uploads/2023/08/Pharmacy-CBT-1-1360x510_c.png",
-        "https://www.unn.edu.ng/wp-content/uploads/2023/08/Extra-Mural-1360x510_c.png",
-        "https://www.unn.edu.ng/wp-content/uploads/2023/08/NMSB-1360x510_c.png",
-        "https://www.unn.edu.ng/wp-content/uploads/2023/08/Closure-of-PG-2023-1360x510_c.png",
-        "https://www.unn.edu.ng/wp-content/uploads/2023/08/New-Academic-Session-2022-1360x510_c.png",
+         "https://www.unn.edu.ng/wp-content/uploads/2023/07/Diploma-2023-1360x510_c.png",
+         "https://www.unn.edu.ng/wp-content/uploads/2023/08/PGC-2023-1360x510_c.png",
+         "https://www.unn.edu.ng/wp-content/uploads/2023/08/PG-Orientation-2023-1360x510_c.png",
+         "https://www.unn.edu.ng/wp-content/uploads/2023/08/Pharmacy-CBT-1-1360x510_c.png",
+         "https://www.unn.edu.ng/wp-content/uploads/2023/08/Extra-Mural-1360x510_c.png",
+         "https://www.unn.edu.ng/wp-content/uploads/2023/08/NMSB-1360x510_c.png",
+         "https://www.unn.edu.ng/wp-content/uploads/2023/08/Closure-of-PG-2023-1360x510_c.png",
+         "https://www.unn.edu.ng/wp-content/uploads/2023/08/New-Academic-Session-2022-1360x510_c.png",
       ],
-      currentIndex: 0,
-      
-      // show:false
+      currentIndex: 0
     };
   },
-  computed: {
-    currentImage() {
-      return this.images[this.currentIndex];
-    },
-    currentImageAlt() {
-      return `Image ${this.currentIndex + 1}`;
-    },
-    
-      ...mapState(["show"])
-   
-    
+  mounted() {
+    this.startSlideshow();
   },
-
-  
-
   methods: {
+    startSlideshow() {
+      this.slideshowInterval = setInterval(this.nextSlide, 5000);
+    },
+    stopSlideshow() {
+      clearInterval(this.slideshowInterval);
+    },
     nextSlide() {
       this.currentIndex = (this.currentIndex + 1) % this.images.length;
-    },
-    prevSlide() {
-      this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
     }
   },
-  mounted() {
-    setInterval(this.nextSlide, 2000); // Change slide every 2 seconds
+  beforeDestroy() {
+    this.stopSlideshow();
   },
+computed:{
+   ...mapState(["show"])
+},
+
   components:{
    Footer,
    // Nav
@@ -59,15 +50,9 @@ export default {
       
     <!-- <Nav/> -->
     
-      <div class="slideshow-container">
-        <div class="slide">
-         <!-- "../assets/unnimg7.png" -->
-          <img :src="images[0]" :alt="currentImageAlt" class="w-full">
-        </div>
-        <button class="prev-button" @click="prevSlide">&#10094;</button>
-        <button class="next-button" @click="nextSlide">&#10095;</button>
-      </div>
-       
+    <div class="slideshow">
+      <img :src="images[currentIndex]" alt="Slideshow Image" class="max-w-full h-auto">
+    </div>
     
     
         <div class=" flex-col flex justify-around items-center mt-10 p-5 sm:flex-row">
@@ -279,3 +264,12 @@ export default {
   </div>
 </template>
 
+<!-- 
+"https://www.unn.edu.ng/wp-content/uploads/2023/07/Diploma-2023-1360x510_c.png",
+"https://www.unn.edu.ng/wp-content/uploads/2023/08/PGC-2023-1360x510_c.png",
+"https://www.unn.edu.ng/wp-content/uploads/2023/08/PG-Orientation-2023-1360x510_c.png",
+"https://www.unn.edu.ng/wp-content/uploads/2023/08/Pharmacy-CBT-1-1360x510_c.png",
+"https://www.unn.edu.ng/wp-content/uploads/2023/08/Extra-Mural-1360x510_c.png",
+"https://www.unn.edu.ng/wp-content/uploads/2023/08/NMSB-1360x510_c.png",
+"https://www.unn.edu.ng/wp-content/uploads/2023/08/Closure-of-PG-2023-1360x510_c.png",
+"https://www.unn.edu.ng/wp-content/uploads/2023/08/New-Academic-Session-2022-1360x510_c.png", -->
