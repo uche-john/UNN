@@ -92,13 +92,13 @@ export default {
          &times;
        </button>
        <section class="flex flex-col min-h-screen items-left text-white text-left py-8">
-         <router-link to="/" class="w-full text-center border-b border-white py-6 hover:opacity-20" @click="toggleShow"><font-awesome-icon icon="fa-solid fa-home" class="text-2xl text-white hover:text-green-400 px-2" />Home</router-link>
-         <router-link to="/" class="w-full text-center border-b border-white py-6 hover:opacity-20" @click="toggleShow"> <font-awesome-icon icon="fa-solid fa-address-book" class="text-2xl text-white hover:text-green-400 px-2" />Academics</router-link>
-         <router-link to="/" class="w-full text-center border-b border-white py-6 hover:opacity-20" @click="toggleShow"><font-awesome-icon icon="fa-solid fa-graduation-cap" class="text-2xl text-white hover:text-green-400 px-2" /> Admission</router-link>
-         <router-link to="/" class="w-full text-center border-b border-white py-6 hover:opacity-20" @click="toggleShow"><font-awesome-icon icon="fa-solid fa-building" class="text-2xl text-white hover:text-green-400 px-2" /> Libraries</router-link>
-         <router-link to="/" class="w-full text-center border-b border-white py-6 hover:opacity-20" @click="toggleShow"><font-awesome-icon icon="fa-solid fa-cash-register" class="text-2xl text-white hover:text-green-400 px-2" /> Registry</router-link>
-         <router-link to="/" class="w-full text-center border-b border-white py-6 hover:opacity-20" @click="toggleShow"><font-awesome-icon icon="fa-solid fa-newspaper" class="text-2xl text-white hover:text-green-400 px-2" />News</router-link>
-         <router-link to="/studentportal" class="w-full text-center border-b border-white py-6 hover:opacity-20 " @click="toggleShow"> <font-awesome-icon icon="fa-solid fa-person" class="text-2xl text-white hover:text-green-400 px-2" />Portal</router-link>
+         <router-link to="/" class="w-full text-center border-b border-white py-6 text-md hover:opacity-20" @click="toggleShow"><font-awesome-icon icon="fa-solid fa-home" class="text-2xl text-white hover:text-green-400 px-2" />Home</router-link>
+         <router-link to="/" class="w-full text-center border-b border-white py-6 text-md hover:opacity-20" @click="toggleShow"> <font-awesome-icon icon="fa-solid fa-address-book" class="text-2xl text-white hover:text-green-400 px-2" />Academics</router-link>
+         <router-link to="/" class="w-full text-center border-b border-white py-6  text-md hover:opacity-20" @click="toggleShow"><font-awesome-icon icon="fa-solid fa-graduation-cap" class="text-2xl text-white hover:text-green-400 px-2" /> Admission</router-link>
+         <router-link to="/" class="w-full text-center border-b border-white py-6 text-md hover:opacity-20" @click="toggleShow"><font-awesome-icon icon="fa-solid fa-building" class="text-2xl text-white hover:text-green-400 px-2" /> Libraries</router-link>
+         <router-link to="/" class="w-full text-center border-b border-white py-6 text-md hover:opacity-20" @click="toggleShow"><font-awesome-icon icon="fa-solid fa-cash-register" class="text-2xl text-white hover:text-green-400 px-2" /> Registry</router-link>
+         <router-link to="/" class="w-full text-center border-b border-white py-6 text-md hover:opacity-20" @click="toggleShow"><font-awesome-icon icon="fa-solid fa-newspaper" class="text-2xl text-white hover:text-green-400 px-2" />News</router-link>
+         <router-link to="/studentportal" class="w-full text-center border-b border-white py-6 text-md hover:opacity-20 " @click="toggleShow"> <font-awesome-icon icon="fa-solid fa-person" class="text-2xl text-white hover:text-green-400 px-2" />Portal</router-link>
          
        </section>
        
